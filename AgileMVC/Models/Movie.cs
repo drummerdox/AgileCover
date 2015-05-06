@@ -8,11 +8,11 @@ namespace AgileMVC.Models
 {
     public class Movie
     {
-        public int ID { get; set; }
-        public string Title { get; set; }
-        public DateTime ReleaseDate { get; set; }
-        public string Genre { get; set; }
-        public decimal Price { get; set; }
+        public int UserID { get; set; }
+        public string Name { get; set; }
+        //public DateTime ReleaseDate { get; set; }
+        public string ForeignName { get; set; }
+        public string SecondName { get; set; }
     }
 
     public class MovieDBContext : DbContext
