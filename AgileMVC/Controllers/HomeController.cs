@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AgileMVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,12 +11,16 @@ namespace AgileMVC.Controllers
     {
         public ActionResult Index()
         {
+
             return View();
+            
         }
 
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
+            UsersRepository SomeUser = new UsersRepository("");
+            SomeUser.GetUser(1);
 
             return View();
         }
